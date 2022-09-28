@@ -1,8 +1,90 @@
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
+    <title>Frosted Glass Effect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
 </head>
+<style>
+    body {
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        background-color: #020202;
+    }
+</style>
+<style>
+.planet {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    z-index: 1;
+    width: 200px;
+    height: auto;
+    filter: blur(2px);
+}
+.card{
+    min-width: 200px;
+    min-height: 450px;
+    position: absolute;
+    border-radius: 20px;
+    padding: 60px;
+    background: linear-gradient(
+            135deg,
+            rgba(80, 80, 80, 0.75),
+            rgba(3, 3, 3, 0.75)
+    );
+    border: 1px solid rgba(171, 166, 166, 0.75);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+.card .title {
+    color: #fff;
+    font-size: 45px;
+    position: relative;
+}
+.card .title .sub {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 10px;
+    color: #8F8F8F;
+    font-weight: 100;
+}
+.card .number {
+    color: #8F8F8F;
+    font-weight: 100;
+}
+.card.card-one {
+    top: 30%;
+    left: 30%;
+    z-index: 3;
+}
+.card.card-two {
+    top: 40%;
+    left: 50%;
+    z-index: 2;
+}
+.mclogo:before {
+
+}
+.mclogo:after {
+
+}
+</style>
 <body>
-<h1>Hello World!</h1>
+<img class="planet" src="assets/images/moon.png" alt="Planet">
+<div class="card card-one">
+    <span class="title">Zero <span class="sub">9</span></span>
+    <div class="number">5668</div>
+    <div class="name">5668</div>
+    <div class="mclogo"></div>
+</div>
+
+<div class="card card-two">
+    <span class="title">Zero <span class="sub">9</span></span>
+    <div class="number">5668</div>
+    <div class="name">5668</div>
+    <div class="mclogo"></div>
+</div>
 </body>
 </html>
