@@ -1,15 +1,8 @@
-/*.card-one {*/
-/*    animation: MoveUpDown 5s ease-in-out infinite, lightLeftRight 5s ease-in-out infinite;*/
-/*}*/
-/*.card-two {*/
-/*    animation: MoveDownUp 5s ease-in-out infinite, lightLeftRight 5s ease-in-out infinite;*/
-/*}*/
-
 .card-one {
-    animation: lightLeftRight 5s ease-in-out infinite;
+    animation: MoveUpDown 5s ease-in-out infinite, lightLeftRight 5s ease-in-out infinite;
 }
 .card-two {
-    animation: lightLeftRight 5s ease-in-out infinite;
+    animation: MoveDownUp 5s ease-in-out infinite, lightLeftRight 5s ease-in-out infinite;
 }
 
 @keyframes lightLeftRight {
@@ -23,19 +16,19 @@
 
 @keyframes MoveUpDown {
     0%, 100% {
-        transform: translateY(10px);
+        top: calc(50% + 10px);
     }
     50% {
-        transform: translateY(-10px);
-
+        top: calc(50% - 10px);
     }
 }
 
 @keyframes MoveDownUp {
     0%, 100% {
-        transform: translateY(-10px);
+        top: calc(60% - 10px);
     }
     50% {
-        transform: translateY(10px);
+        top: calc(60% + 10px);
     }
 }
+
