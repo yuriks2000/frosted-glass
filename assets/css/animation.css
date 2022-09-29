@@ -1,0 +1,41 @@
+/*.card-one {*/
+/*    animation: MoveUpDown 5s ease-in-out infinite, lightLeftRight 5s ease-in-out infinite;*/
+/*}*/
+/*.card-two {*/
+/*    animation: MoveDownUp 5s ease-in-out infinite, lightLeftRight 5s ease-in-out infinite;*/
+/*}*/
+
+.card-one {
+    animation: lightLeftRight 5s ease-in-out infinite;
+}
+.card-two {
+    animation: lightLeftRight 5s ease-in-out infinite;
+}
+
+@keyframes lightLeftRight {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+
+    }
+}
+
+@keyframes MoveDownUp {
+    0%, 100% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
